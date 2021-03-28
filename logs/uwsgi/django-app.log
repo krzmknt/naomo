@@ -1,0 +1,212 @@
+*** Starting uWSGI 2.0.17.1 (64bit) on [Sun Mar 28 15:37:19 2021] ***
+compiled with version: 8.3.0 on 28 March 2021 06:36:26
+os: Linux-5.4.0-1029-aws #30-Ubuntu SMP Tue Oct 20 10:06:38 UTC 2020
+nodename: 4d12cb9f2026
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /home/work
+detected binary path: /usr/local/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/work/naomo
+your memory page size is 4096 bytes
+detected max file descriptor number: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address :8000 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.7.9 (default, Jan 12 2021, 17:26:22)  [GCC 8.3.0]
+Python main interpreter initialized at 0x560f5304a1a0
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 158128 bytes (154 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x560f5304a1a0 pid: 1 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 1)
+spawned uWSGI worker 1 (pid: 7, cores: 1)
+Python auto-reloader enabled
+...brutally killing workers...
+worker 1 buried after 1 seconds
+binary reloading uWSGI...
+chdir() to /home/work
+closing all non-uwsgi socket fds > 2 (max_fd = 1048576)...
+found fd 3 mapped to socket 0 (:8000)
+running /usr/local/bin/uwsgi
+[uWSGI] getting INI configuration from /home/work/uwsgi.ini
+*** Starting uWSGI 2.0.17.1 (64bit) on [Sun Mar 28 15:38:01 2021] ***
+compiled with version: 8.3.0 on 28 March 2021 06:36:26
+os: Linux-5.4.0-1029-aws #30-Ubuntu SMP Tue Oct 20 10:06:38 UTC 2020
+nodename: 4d12cb9f2026
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /home/work
+detected binary path: /usr/local/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/work/naomo
+your memory page size is 4096 bytes
+detected max file descriptor number: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 inherited INET address :8000 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.7.9 (default, Jan 12 2021, 17:26:22)  [GCC 8.3.0]
+Python main interpreter initialized at 0x5602dcc10150
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 158128 bytes (154 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x5602dcc10150 pid: 1 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+gracefully (RE)spawned uWSGI master process (pid: 1)
+spawned uWSGI worker 1 (pid: 9, cores: 1)
+Python auto-reloader enabled
+Sun Mar 28 15:38:10 2021 - uWSGI worker 1 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+*** Starting uWSGI 2.0.17.1 (64bit) on [Sun Mar 28 15:48:05 2021] ***
+compiled with version: 8.3.0 on 28 March 2021 06:47:22
+os: Linux-5.4.0-1029-aws #30-Ubuntu SMP Tue Oct 20 10:06:38 UTC 2020
+nodename: 643d6f8c16d9
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /home/work
+detected binary path: /usr/local/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/work/naomo
+your memory page size is 4096 bytes
+detected max file descriptor number: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address :8000 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.7.9 (default, Jan 12 2021, 17:26:22)  [GCC 8.3.0]
+Python main interpreter initialized at 0x55ef183bc1a0
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 158128 bytes (154 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x55ef183bc1a0 pid: 1 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 1)
+spawned uWSGI worker 1 (pid: 7, cores: 1)
+Python auto-reloader enabled
+...brutally killing workers...
+worker 1 buried after 1 seconds
+binary reloading uWSGI...
+chdir() to /home/work
+closing all non-uwsgi socket fds > 2 (max_fd = 1048576)...
+found fd 3 mapped to socket 0 (:8000)
+running /usr/local/bin/uwsgi
+[uWSGI] getting INI configuration from /home/work/uwsgi.ini
+*** Starting uWSGI 2.0.17.1 (64bit) on [Sun Mar 28 16:02:45 2021] ***
+compiled with version: 8.3.0 on 28 March 2021 06:47:22
+os: Linux-5.4.0-1029-aws #30-Ubuntu SMP Tue Oct 20 10:06:38 UTC 2020
+nodename: 643d6f8c16d9
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /home/work
+detected binary path: /usr/local/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/work/naomo
+your memory page size is 4096 bytes
+detected max file descriptor number: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 inherited INET address :8000 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.7.9 (default, Jan 12 2021, 17:26:22)  [GCC 8.3.0]
+Python main interpreter initialized at 0x5621ff0ec150
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 158128 bytes (154 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x5621ff0ec150 pid: 1 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+gracefully (RE)spawned uWSGI master process (pid: 1)
+spawned uWSGI worker 1 (pid: 9, cores: 1)
+Python auto-reloader enabled
+Sun Mar 28 16:02:53 2021 - uWSGI worker 1 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+*** Starting uWSGI 2.0.17.1 (64bit) on [Sun Mar 28 16:03:29 2021] ***
+compiled with version: 8.3.0 on 28 March 2021 06:47:22
+os: Linux-5.4.0-1029-aws #30-Ubuntu SMP Tue Oct 20 10:06:38 UTC 2020
+nodename: 35a498b5bff8
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /home/work
+detected binary path: /usr/local/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/work/naomo
+your memory page size is 4096 bytes
+detected max file descriptor number: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address :8000 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.7.9 (default, Jan 12 2021, 17:26:22)  [GCC 8.3.0]
+Python main interpreter initialized at 0x557f9ad041a0
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 158128 bytes (154 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x557f9ad041a0 pid: 1 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 1)
+spawned uWSGI worker 1 (pid: 7, cores: 1)
+Python auto-reloader enabled
+27.139.82.85 - - [28/Mar/2021:16:24:13 +0900] "GET /app/ HTTP/1.1" 200 74`` "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 11_0_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.90 Safari/537.36"
+!!! uWSGI process 7 got Segmentation Fault !!!
+*** backtrace of 7 ***
+uwsgi(uwsgi_backtrace+0x2a) [0x557f9a40ec1a]
+uwsgi(uwsgi_segfault+0x23) [0x557f9a40efd3]
+/lib/x86_64-linux-gnu/libc.so.6(+0x37840) [0x7fc2ff4fd840]
+/usr/local/lib/libpython3.7m.so.1.0(PyBytes_AsString+0x4) [0x7fc2ff79c884]
+uwsgi(uwsgi_python_autoreloader_thread+0x160) [0x557f9a426140]
+/lib/x86_64-linux-gnu/libpthread.so.0(+0x7fa3) [0x7fc30037cfa3]
+/lib/x86_64-linux-gnu/libc.so.6(clone+0x3f) [0x7fc2ff5bf4cf]
+*** end of backtrace ***
+DAMN ! worker 1 (pid: 7) died, killed by signal 11 :( trying respawn ...
+Respawned uWSGI worker 1 (new pid: 9)
+Python auto-reloader enabled
