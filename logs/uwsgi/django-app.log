@@ -210,3 +210,347 @@ uwsgi(uwsgi_python_autoreloader_thread+0x160) [0x557f9a426140]
 DAMN ! worker 1 (pid: 7) died, killed by signal 11 :( trying respawn ...
 Respawned uWSGI worker 1 (new pid: 9)
 Python auto-reloader enabled
+*** Starting uWSGI 2.0.17.1 (64bit) on [Mon Mar 29 00:17:44 2021] ***
+compiled with version: 8.3.0 on 28 March 2021 06:47:22
+os: Linux-5.4.0-1029-aws #30-Ubuntu SMP Tue Oct 20 10:06:38 UTC 2020
+nodename: 3b1cc4391d31
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /home/work
+detected binary path: /usr/local/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/work/naomo
+your memory page size is 4096 bytes
+detected max file descriptor number: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address :8000 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.7.9 (default, Jan 12 2021, 17:26:22)  [GCC 8.3.0]
+Python main interpreter initialized at 0x5584d6c011a0
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 158128 bytes (154 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x5584d6c011a0 pid: 1 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 1)
+spawned uWSGI worker 1 (pid: 6, cores: 1)
+Python auto-reloader enabled
+27.139.82.85 - - [29/Mar/2021:00:19:08 +0900] "GET /app/ HTTP/1.1" 200 74`` "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 11_0_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.90 Safari/537.36"
+!!! uWSGI process 6 got Segmentation Fault !!!
+*** backtrace of 6 ***
+uwsgi(uwsgi_backtrace+0x2a) [0x5584d5dc9c1a]
+uwsgi(uwsgi_segfault+0x23) [0x5584d5dc9fd3]
+/lib/x86_64-linux-gnu/libc.so.6(+0x37840) [0x7fb20b4cf840]
+/usr/local/lib/libpython3.7m.so.1.0(PyBytes_AsString+0x4) [0x7fb20b76e884]
+uwsgi(uwsgi_python_autoreloader_thread+0x160) [0x5584d5de1140]
+/lib/x86_64-linux-gnu/libpthread.so.0(+0x7fa3) [0x7fb20c34efa3]
+/lib/x86_64-linux-gnu/libc.so.6(clone+0x3f) [0x7fb20b5914cf]
+*** end of backtrace ***
+DAMN ! worker 1 (pid: 6) died, killed by signal 11 :( trying respawn ...
+Respawned uWSGI worker 1 (new pid: 8)
+Python auto-reloader enabled
+27.139.82.85 - - [29/Mar/2021:00:21:01 +0900] "GET /app/ HTTP/1.1" 200 74`` "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 11_0_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.90 Safari/537.36"
+!!! uWSGI process 8 got Segmentation Fault !!!
+*** backtrace of 8 ***
+uwsgi(uwsgi_backtrace+0x2a) [0x5584d5dc9c1a]
+uwsgi(uwsgi_segfault+0x23) [0x5584d5dc9fd3]
+/lib/x86_64-linux-gnu/libc.so.6(+0x37840) [0x7fb20b4cf840]
+/usr/local/lib/libpython3.7m.so.1.0(PyBytes_AsString+0x4) [0x7fb20b76e884]
+uwsgi(uwsgi_python_autoreloader_thread+0x160) [0x5584d5de1140]
+/lib/x86_64-linux-gnu/libpthread.so.0(+0x7fa3) [0x7fb20c34efa3]
+/lib/x86_64-linux-gnu/libc.so.6(clone+0x3f) [0x7fb20b5914cf]
+*** end of backtrace ***
+DAMN ! worker 1 (pid: 8) died, killed by signal 11 :( trying respawn ...
+Respawned uWSGI worker 1 (new pid: 10)
+Python auto-reloader enabled
+27.139.82.85 - - [29/Mar/2021:00:21:02 +0900] "GET /app/ HTTP/1.1" 200 74`` "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 11_0_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.90 Safari/537.36"
+27.139.82.85 - - [29/Mar/2021:00:21:02 +0900] "GET /app/ HTTP/1.1" 200 74`` "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 11_0_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.90 Safari/537.36"
+27.139.82.85 - - [29/Mar/2021:00:21:02 +0900] "GET /app/ HTTP/1.1" 200 74`` "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 11_0_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.90 Safari/537.36"
+!!! uWSGI process 10 got Segmentation Fault !!!
+*** backtrace of 10 ***
+uwsgi(uwsgi_backtrace+0x2a) [0x5584d5dc9c1a]
+uwsgi(uwsgi_segfault+0x23) [0x5584d5dc9fd3]
+/lib/x86_64-linux-gnu/libc.so.6(+0x37840) [0x7fb20b4cf840]
+/usr/local/lib/libpython3.7m.so.1.0(PyBytes_AsString+0x4) [0x7fb20b76e884]
+uwsgi(uwsgi_python_autoreloader_thread+0x160) [0x5584d5de1140]
+/lib/x86_64-linux-gnu/libpthread.so.0(+0x7fa3) [0x7fb20c34efa3]
+/lib/x86_64-linux-gnu/libc.so.6(clone+0x3f) [0x7fb20b5914cf]
+*** end of backtrace ***
+DAMN ! worker 1 (pid: 10) died, killed by signal 11 :( trying respawn ...
+Respawned uWSGI worker 1 (new pid: 12)
+Python auto-reloader enabled
+27.139.82.85 - - [29/Mar/2021:00:21:04 +0900] "GET /app/login HTTP/1.1" 200 74`` "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 11_0_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.90 Safari/537.36"
+!!! uWSGI process 12 got Segmentation Fault !!!
+*** backtrace of 12 ***
+uwsgi(uwsgi_backtrace+0x2a) [0x5584d5dc9c1a]
+uwsgi(uwsgi_segfault+0x23) [0x5584d5dc9fd3]
+/lib/x86_64-linux-gnu/libc.so.6(+0x37840) [0x7fb20b4cf840]
+/usr/local/lib/libpython3.7m.so.1.0(PyBytes_AsString+0x4) [0x7fb20b76e884]
+uwsgi(uwsgi_python_autoreloader_thread+0x160) [0x5584d5de1140]
+/lib/x86_64-linux-gnu/libpthread.so.0(+0x7fa3) [0x7fb20c34efa3]
+/lib/x86_64-linux-gnu/libc.so.6(clone+0x3f) [0x7fb20b5914cf]
+*** end of backtrace ***
+DAMN ! worker 1 (pid: 12) died, killed by signal 11 :( trying respawn ...
+Respawned uWSGI worker 1 (new pid: 14)
+Python auto-reloader enabled
+27.139.82.85 - - [29/Mar/2021:00:21:09 +0900] "GET /app/login HTTP/1.1" 200 74`` "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 11_0_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.90 Safari/537.36"
+!!! uWSGI process 14 got Segmentation Fault !!!
+*** backtrace of 14 ***
+uwsgi(uwsgi_backtrace+0x2a) [0x5584d5dc9c1a]
+uwsgi(uwsgi_segfault+0x23) [0x5584d5dc9fd3]
+/lib/x86_64-linux-gnu/libc.so.6(+0x37840) [0x7fb20b4cf840]
+/usr/local/lib/libpython3.7m.so.1.0(PyBytes_AsString+0x4) [0x7fb20b76e884]
+uwsgi(uwsgi_python_autoreloader_thread+0x160) [0x5584d5de1140]
+/lib/x86_64-linux-gnu/libpthread.so.0(+0x7fa3) [0x7fb20c34efa3]
+/lib/x86_64-linux-gnu/libc.so.6(clone+0x3f) [0x7fb20b5914cf]
+*** end of backtrace ***
+DAMN ! worker 1 (pid: 14) died, killed by signal 11 :( trying respawn ...
+Respawned uWSGI worker 1 (new pid: 16)
+Python auto-reloader enabled
+27.139.82.85 - - [29/Mar/2021:00:21:11 +0900] "GET /app/ HTTP/1.1" 200 74`` "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 11_0_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.90 Safari/537.36"
+!!! uWSGI process 16 got Segmentation Fault !!!
+*** backtrace of 16 ***
+uwsgi(uwsgi_backtrace+0x2a) [0x5584d5dc9c1a]
+uwsgi(uwsgi_segfault+0x23) [0x5584d5dc9fd3]
+/lib/x86_64-linux-gnu/libc.so.6(+0x37840) [0x7fb20b4cf840]
+/usr/local/lib/libpython3.7m.so.1.0(PyBytes_AsString+0x4) [0x7fb20b76e884]
+uwsgi(uwsgi_python_autoreloader_thread+0x160) [0x5584d5de1140]
+/lib/x86_64-linux-gnu/libpthread.so.0(+0x7fa3) [0x7fb20c34efa3]
+/lib/x86_64-linux-gnu/libc.so.6(clone+0x3f) [0x7fb20b5914cf]
+*** end of backtrace ***
+DAMN ! worker 1 (pid: 16) died, killed by signal 11 :( trying respawn ...
+Respawned uWSGI worker 1 (new pid: 18)
+Python auto-reloader enabled
+27.139.82.85 - - [29/Mar/2021:00:21:34 +0900] "GET /app/ HTTP/1.1" 200 589`` "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 11_0_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.90 Safari/537.36"
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 100, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/usr/local/lib/python3.7/site-packages/django/urls/resolvers.py", line 567, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<URLResolver <module 'app.urls' from './app/urls.py'> (None:None) 'app/'>, <URLPattern 'login' [name='login_top']>], [<URLResolver <module 'app.urls' from './app/urls.py'> (None:None) 'app/'>, <URLPattern '' [name='index_top']>]], 'path': 'app/style.css'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/wsgi.py", line 141, in __call__
+    response = self.get_response(request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 75, in get_response
+    response = self._middleware_chain(request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/exception.py", line 36, in inner
+    response = response_for_exception(request, exc)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/exception.py", line 44, in response_for_exception
+    response = debug.technical_404_response(request, exc)
+  File "/usr/local/lib/python3.7/site-packages/django/views/debug.py", line 509, in technical_404_response
+    return HttpResponseNotFound(t.render(c), content_type='text/html')
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 987, in render
+    output = self.filter_expression.resolve(context)
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 671, in resolve
+    obj = self.var.resolve(context)
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 796, in resolve
+    value = self._resolve_lookup(context)
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 858, in _resolve_lookup
+    current = current()
+  File "/usr/local/lib/python3.7/site-packages/django/http/request.py", line 195, in build_absolute_uri
+    location = self._current_scheme_host + location
+  File "/usr/local/lib/python3.7/site-packages/django/utils/functional.py", line 80, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python3.7/site-packages/django/http/request.py", line 205, in _current_scheme_host
+    return '{}://{}'.format(self.scheme, self.get_host())
+  File "/usr/local/lib/python3.7/site-packages/django/http/request.py", line 111, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'krzmknt.com'. You may need to add 'krzmknt.com' to ALLOWED_HOSTS.
+27.139.82.85 - - [29/Mar/2021:00:21:34 +0900] "GET /app/style.css HTTP/1.1" 500 0`` "http://krzmknt.com/app/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 11_0_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.90 Safari/537.36"
+27.139.82.85 - - [29/Mar/2021:00:21:35 +0900] "GET /app/ HTTP/1.1" 200 589`` "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 11_0_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.90 Safari/537.36"
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 100, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/usr/local/lib/python3.7/site-packages/django/urls/resolvers.py", line 567, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<URLResolver <module 'app.urls' from './app/urls.py'> (None:None) 'app/'>, <URLPattern 'login' [name='login_top']>], [<URLResolver <module 'app.urls' from './app/urls.py'> (None:None) 'app/'>, <URLPattern '' [name='index_top']>]], 'path': 'app/style.css'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/wsgi.py", line 141, in __call__
+    response = self.get_response(request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 75, in get_response
+    response = self._middleware_chain(request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/exception.py", line 36, in inner
+    response = response_for_exception(request, exc)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/exception.py", line 44, in response_for_exception
+    response = debug.technical_404_response(request, exc)
+  File "/usr/local/lib/python3.7/site-packages/django/views/debug.py", line 509, in technical_404_response
+    return HttpResponseNotFound(t.render(c), content_type='text/html')
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 987, in render
+    output = self.filter_expression.resolve(context)
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 671, in resolve
+    obj = self.var.resolve(context)
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 796, in resolve
+    value = self._resolve_lookup(context)
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 858, in _resolve_lookup
+    current = current()
+  File "/usr/local/lib/python3.7/site-packages/django/http/request.py", line 195, in build_absolute_uri
+    location = self._current_scheme_host + location
+  File "/usr/local/lib/python3.7/site-packages/django/utils/functional.py", line 80, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python3.7/site-packages/django/http/request.py", line 205, in _current_scheme_host
+    return '{}://{}'.format(self.scheme, self.get_host())
+  File "/usr/local/lib/python3.7/site-packages/django/http/request.py", line 111, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'krzmknt.com'. You may need to add 'krzmknt.com' to ALLOWED_HOSTS.
+27.139.82.85 - - [29/Mar/2021:00:21:35 +0900] "GET /app/style.css HTTP/1.1" 500 0`` "http://krzmknt.com/app/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 11_0_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.90 Safari/537.36"
+27.139.82.85 - - [29/Mar/2021:00:21:35 +0900] "GET /app/ HTTP/1.1" 200 589`` "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 11_0_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.90 Safari/537.36"
+!!! uWSGI process 18 got Segmentation Fault !!!
+*** backtrace of 18 ***
+uwsgi(uwsgi_backtrace+0x2a) [0x5584d5dc9c1a]
+uwsgi(uwsgi_segfault+0x23) [0x5584d5dc9fd3]
+/lib/x86_64-linux-gnu/libc.so.6(+0x37840) [0x7fb20b4cf840]
+/usr/local/lib/libpython3.7m.so.1.0(PyBytes_AsString+0x4) [0x7fb20b76e884]
+uwsgi(uwsgi_python_autoreloader_thread+0x160) [0x5584d5de1140]
+/lib/x86_64-linux-gnu/libpthread.so.0(+0x7fa3) [0x7fb20c34efa3]
+/lib/x86_64-linux-gnu/libc.so.6(clone+0x3f) [0x7fb20b5914cf]
+*** end of backtrace ***
+DAMN ! worker 1 (pid: 18) died, killed by signal 11 :( trying respawn ...
+Respawned uWSGI worker 1 (new pid: 20)
+Python auto-reloader enabled
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 100, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/usr/local/lib/python3.7/site-packages/django/urls/resolvers.py", line 567, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<URLResolver <module 'app.urls' from './app/urls.py'> (None:None) 'app/'>, <URLPattern 'login' [name='login_top']>], [<URLResolver <module 'app.urls' from './app/urls.py'> (None:None) 'app/'>, <URLPattern '' [name='index_top']>]], 'path': 'app/style.css'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/wsgi.py", line 141, in __call__
+    response = self.get_response(request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 75, in get_response
+    response = self._middleware_chain(request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/exception.py", line 36, in inner
+    response = response_for_exception(request, exc)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/exception.py", line 44, in response_for_exception
+    response = debug.technical_404_response(request, exc)
+  File "/usr/local/lib/python3.7/site-packages/django/views/debug.py", line 509, in technical_404_response
+    return HttpResponseNotFound(t.render(c), content_type='text/html')
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 987, in render
+    output = self.filter_expression.resolve(context)
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 671, in resolve
+    obj = self.var.resolve(context)
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 796, in resolve
+    value = self._resolve_lookup(context)
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 858, in _resolve_lookup
+    current = current()
+  File "/usr/local/lib/python3.7/site-packages/django/http/request.py", line 195, in build_absolute_uri
+    location = self._current_scheme_host + location
+  File "/usr/local/lib/python3.7/site-packages/django/utils/functional.py", line 80, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python3.7/site-packages/django/http/request.py", line 205, in _current_scheme_host
+    return '{}://{}'.format(self.scheme, self.get_host())
+  File "/usr/local/lib/python3.7/site-packages/django/http/request.py", line 111, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'krzmknt.com'. You may need to add 'krzmknt.com' to ALLOWED_HOSTS.
+27.139.82.85 - - [29/Mar/2021:00:21:36 +0900] "GET /app/style.css HTTP/1.1" 500 0`` "http://krzmknt.com/app/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 11_0_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.90 Safari/537.36"
+27.139.82.85 - - [29/Mar/2021:00:21:36 +0900] "GET /app/ HTTP/1.1" 200 589`` "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 11_0_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.90 Safari/537.36"
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 100, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/usr/local/lib/python3.7/site-packages/django/urls/resolvers.py", line 567, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<URLResolver <module 'app.urls' from './app/urls.py'> (None:None) 'app/'>, <URLPattern 'login' [name='login_top']>], [<URLResolver <module 'app.urls' from './app/urls.py'> (None:None) 'app/'>, <URLPattern '' [name='index_top']>]], 'path': 'app/style.css'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/wsgi.py", line 141, in __call__
+    response = self.get_response(request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 75, in get_response
+    response = self._middleware_chain(request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/exception.py", line 36, in inner
+    response = response_for_exception(request, exc)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/exception.py", line 44, in response_for_exception
+    response = debug.technical_404_response(request, exc)
+  File "/usr/local/lib/python3.7/site-packages/django/views/debug.py", line 509, in technical_404_response
+    return HttpResponseNotFound(t.render(c), content_type='text/html')
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 987, in render
+    output = self.filter_expression.resolve(context)
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 671, in resolve
+    obj = self.var.resolve(context)
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 796, in resolve
+    value = self._resolve_lookup(context)
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 858, in _resolve_lookup
+    current = current()
+  File "/usr/local/lib/python3.7/site-packages/django/http/request.py", line 195, in build_absolute_uri
+    location = self._current_scheme_host + location
+  File "/usr/local/lib/python3.7/site-packages/django/utils/functional.py", line 80, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python3.7/site-packages/django/http/request.py", line 205, in _current_scheme_host
+    return '{}://{}'.format(self.scheme, self.get_host())
+  File "/usr/local/lib/python3.7/site-packages/django/http/request.py", line 111, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'krzmknt.com'. You may need to add 'krzmknt.com' to ALLOWED_HOSTS.
+27.139.82.85 - - [29/Mar/2021:00:21:36 +0900] "GET /app/style.css HTTP/1.1" 500 0`` "http://krzmknt.com/app/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 11_0_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.90 Safari/537.36"
+!!! uWSGI process 20 got Segmentation Fault !!!
+*** backtrace of 20 ***
+uwsgi(uwsgi_backtrace+0x2a) [0x5584d5dc9c1a]
+uwsgi(uwsgi_segfault+0x23) [0x5584d5dc9fd3]
+/lib/x86_64-linux-gnu/libc.so.6(+0x37840) [0x7fb20b4cf840]
+/usr/local/lib/libpython3.7m.so.1.0(PyBytes_AsString+0x4) [0x7fb20b76e884]
+uwsgi(uwsgi_python_autoreloader_thread+0x160) [0x5584d5de1140]
+/lib/x86_64-linux-gnu/libpthread.so.0(+0x7fa3) [0x7fb20c34efa3]
+/lib/x86_64-linux-gnu/libc.so.6(clone+0x3f) [0x7fb20b5914cf]
+*** end of backtrace ***
+DAMN ! worker 1 (pid: 20) died, killed by signal 11 :( trying respawn ...
+Respawned uWSGI worker 1 (new pid: 22)
+Python auto-reloader enabled
