@@ -20,6 +20,20 @@ services:
     networks:
       naomo-network:
         ipv4_address: 172.23.0.5
+  mysql:
+    build: "./Infrastructure/mysql/"
+    volumes:
+      - ./Infrastructure/mysql/init:/docker-entrypoint-initdb.d
+      - ./logs/mysql:/var/lib/mysql
+    environment:
+      - MYSQL_DATABASE=naomo
+      - MYSQL_ROOT_PASSWORD=krzmknt
+      - TZ="Asia/Tokyo"
+    ports:
+      - "3306:3306"
+    networks:
+      naomo-network:
+        ipv4_address: 172.23.0.6
 networks:
   naomo-network:
     driver: bridge

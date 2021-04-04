@@ -1,9 +1,12 @@
+{% load static %}
 <html>
 	<head>
-		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
 	</head>
 	<body>
 		<p>beginInclusive - endExclusive </p>
+
+	{% static 'style.css' %}
 
 	<svg class="circle" width="280" height="280">
 		<circle class="type type4 typeA4" cx="140" cy="140" r="90"></circle>

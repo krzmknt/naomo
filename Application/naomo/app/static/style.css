@@ -1,0 +1,65 @@
+.pie{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: #1abc9c;
+    background-image: linear-gradient(to right, transparent 50%, #fe8a01 0);
+}
+
+
+.pie::before{
+    content: 'a';
+    display: block;
+    margin-left: 5%;
+    height: 10%;
+    border-radius: 0 100% 100% 0 / 0%;
+    background-color: inherit;
+    transform-origin: left;
+    background: red; /*ここで色をオレンジにする*/
+    transform: rotate(0turn);
+}
+
+
+
+.piea{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: conic-gradient(deeppink 20%, #fb3 0, #fb3 30%, #1abc9c 0);
+}
+
+
+
+.circle{
+  display:inline-block;
+  transform:rotate(-90deg);
+}
+.circle .type{
+  fill:transparent;
+  stroke-width:100;
+}
+
+
+.typeA1{animation:circleA1 1s forwards;}
+@keyframes circleA1{
+  0%{stroke-dasharray:0 565;}
+  99.9%,to{stroke-dasharray:350 565;}
+}
+.typeA2{animation:circleA2 1s forwards;}
+@keyframes circleA2{
+  0%{stroke-dasharray:0 565;}
+  99.9%,to{stroke-dasharray:446 565;}
+}
+.typeA3{animation:circleA3 1s forwards;}
+@keyframes circleA3{
+  0%{stroke-dasharray:0 565;}
+  99.9%,to{stroke-dasharray:520 565;}
+}
+.typeA4{animation:circleA4 1s forwards;}
+@keyframes circleA4{
+  0%{stroke-dasharray:0 565;}
+  99.9%,to{stroke-dasharray:565 565;}
+}
+
+
+
